@@ -1,0 +1,648 @@
+1. Basic Commands of LINUX
+
+	1. pwd - Present Working Directory
+
+	2. ls -- List of Files and Directory
+
+	3. ls -a -- List of Files and Folders
+		HIDDEN
+
+	4. cd - Change Directory
+		cd <DirectoryorFolderName>
+	5. cd .. -- One step back
+	6. cd -- Goes to Parent Path
+	7. mkdir -- Make Directory
+		mkdir <DirectoryName>
+
+	8. File Management 
+		touch : Used to create the file
+		echo  : Single Line Data
+		cat    : Used to read the file data
+		Multi Line Data Insertion
+		gedit  : 
+		nano  :
+		rm -- Remove
+		rmdir -- Remove Directory
+
+1. git init -- Initialize the Empty git repositary
+	2. git status
+	3. git add <FileName>
+	4. git status
+	5. git config --global user.email 'YourEmailID'
+	6. git config --global user.name 'YourName'
+	7. git config user.email
+	8. git config user.name
+	9. git commit -m "First Commit"
+	10. git log
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ git --version
+git version 2.24.1.windows.2
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ git --update
+unknown option: --update
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ pwd
+/c/Users/vishn
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ cd youtubePro
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ pwd
+/c/Users/vishn/youtubePro
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ ls
+dataStuff/  prac/  todo/
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ cd prac
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/prac
+$ ls
+AplusB.py     fibonacci.py  huge_fibonacci.py  output.png    test.py
+fibo_last.py  gcd.py        lcm.py             squareFib.py
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/prac
+$ cd ..
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ cd ..
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ pwd
+/c/Users/vishn
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ mkdir aiml
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ cd aiml
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ touch data.txt
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ ls
+data.txt
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ echo "text here" >data.txt
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ cat data.txt
+text here
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ gedit Data,txt
+bash: gedit: command not found
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ nano Data.txt
+Error in /usr/share/nano/git.nanorc on line 1: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 2: Command "
+" not understoodare/nano/git.nanorc on line 10: Command "
+" not understoodare/nano/git.nanorc on line 15: Command "
+Error in /usr/share/nano/git.nanorc on line 19: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 20: Command "
+" not understoodare/nano/git.nanorc on line 23: Command "
+" not understoodare/nano/git.nanorc on line 26: Command "
+" not understoodare/nano/git.nanorc on line 33: Command "
+" not understoodare/nano/git.nanorc on line 36: Command "
+" not understoodare/nano/git.nanorc on line 42: Command "
+" not understoodare/nano/git.nanorc on line 44: Command "
+" not understoodare/nano/git.nanorc on line 47: Command "
+" not understoodare/nano/git.nanorc on line 50: Command "
+" not understoodare/nano/git.nanorc on line 51: Command "
+Error in /usr/share/nano/git.nanorc on line 53: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 54: Command "
+" not understoodare/nano/git.nanorc on line 57: Command "
+" not understoodare/nano/git.nanorc on line 60: Command "
+" not understoodare/nano/git.nanorc on line 74: Command "
+" not understoodare/nano/git.nanorc on line 77: Command "
+" not understoodare/nano/git.nanorc on line 80: Command "
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ cat data.txt
+text here
+hello world
+der classiker
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ nano new.txt
+Error in /usr/share/nano/git.nanorc on line 1: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 2: Command "
+" not understoodare/nano/git.nanorc on line 10: Command "
+" not understoodare/nano/git.nanorc on line 15: Command "
+Error in /usr/share/nano/git.nanorc on line 19: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 20: Command "
+" not understoodare/nano/git.nanorc on line 23: Command "
+" not understoodare/nano/git.nanorc on line 26: Command "
+" not understoodare/nano/git.nanorc on line 33: Command "
+" not understoodare/nano/git.nanorc on line 36: Command "
+" not understoodare/nano/git.nanorc on line 42: Command "
+" not understoodare/nano/git.nanorc on line 44: Command "
+" not understoodare/nano/git.nanorc on line 47: Command "
+" not understoodare/nano/git.nanorc on line 50: Command "
+" not understoodare/nano/git.nanorc on line 51: Command "
+Error in /usr/share/nano/git.nanorc on line 53: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 54: Command "
+" not understoodare/nano/git.nanorc on line 57: Command "
+" not understoodare/nano/git.nanorc on line 60: Command "
+" not understoodare/nano/git.nanorc on line 74: Command "
+" not understoodare/nano/git.nanorc on line 77: Command "
+" not understoodare/nano/git.nanorc on line 80: Command "
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ rm new.txt
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ rm
+rm: missing operand
+Try 'rm --help' for more information.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ rmdie
+bash: rmdie: command not found
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ rmdir
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml
+$ git init
+Initialized empty Git repository in C:/Users/vishn/aiml/.git/
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git  config --global user.email 'vishnujps64@gmail.com'
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git conifd --global user.name 'Vishnu'
+git: 'conifd' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git config --global user.name 'Vishnu'
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git config user.email
+vishnujps64@gmail.com
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit-m "First Commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit-m"First Commit"
+git: 'commit-mFirst Commit' is not a git command. See 'git --help'.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit-m "First Commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit "First Commit"
+error: pathspec 'First Commit' did not match any file(s) known to git
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit -m "First Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        data.txt
+
+nothing added to commit but untracked files present
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ nano dats.txt
+Error in /usr/share/nano/git.nanorc on line 1: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 2: Command "
+" not understoodare/nano/git.nanorc on line 10: Command "
+" not understoodare/nano/git.nanorc on line 15: Command "
+Error in /usr/share/nano/git.nanorc on line 19: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 20: Command "
+" not understoodare/nano/git.nanorc on line 23: Command "
+" not understoodare/nano/git.nanorc on line 26: Command "
+" not understoodare/nano/git.nanorc on line 33: Command "
+" not understoodare/nano/git.nanorc on line 36: Command "
+" not understoodare/nano/git.nanorc on line 42: Command "
+" not understoodare/nano/git.nanorc on line 44: Command "
+" not understoodare/nano/git.nanorc on line 47: Command "
+" not understoodare/nano/git.nanorc on line 50: Command "
+" not understoodare/nano/git.nanorc on line 51: Command "
+Error in /usr/share/nano/git.nanorc on line 53: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 54: Command "
+" not understoodare/nano/git.nanorc on line 57: Command "
+" not understoodare/nano/git.nanorc on line 60: Command "
+" not understoodare/nano/git.nanorc on line 74: Command "
+" not understoodare/nano/git.nanorc on line 77: Command "
+" not understoodare/nano/git.nanorc on line 80: Command "
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ nano data.txt
+Error in /usr/share/nano/git.nanorc on line 1: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 2: Command "
+" not understoodare/nano/git.nanorc on line 10: Command "
+" not understoodare/nano/git.nanorc on line 15: Command "
+Error in /usr/share/nano/git.nanorc on line 19: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 20: Command "
+" not understoodare/nano/git.nanorc on line 23: Command "
+" not understoodare/nano/git.nanorc on line 26: Command "
+" not understoodare/nano/git.nanorc on line 33: Command "
+" not understoodare/nano/git.nanorc on line 36: Command "
+" not understoodare/nano/git.nanorc on line 42: Command "
+" not understoodare/nano/git.nanorc on line 44: Command "
+" not understoodare/nano/git.nanorc on line 47: Command "
+" not understoodare/nano/git.nanorc on line 50: Command "
+" not understoodare/nano/git.nanorc on line 51: Command "
+Error in /usr/share/nano/git.nanorc on line 53: Regex strings must begin and end with a " character
+" not understoodare/nano/git.nanorc on line 54: Command "
+" not understoodare/nano/git.nanorc on line 57: Command "
+" not understoodare/nano/git.nanorc on line 60: Command "
+" not understoodare/nano/git.nanorc on line 74: Command "
+" not understoodare/nano/git.nanorc on line 77: Command "
+" not understoodare/nano/git.nanorc on line 80: Command "
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit -m "second commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        data.txt
+
+nothing added to commit but untracked files present
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git data.txt
+git: 'data.txt' is not a git command. See 'git --help'.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git add data.txt
+warning: LF will be replaced by CRLF in data.txt.
+The file will have its original line endings in your working directory
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git commit -m "second commit"
+[master (root-commit) 4f25fa4] second commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 data.txt
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git log
+commit 4f25fa478485063ec74649f39ca30b53367d51de (HEAD -> master)
+Author: Vishnu <vishnujps64@gmail.com>
+Date:   Tue May 26 15:27:05 2020 +0530
+
+    second commit
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ mkdir test
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ls
+data.txt  test/
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote test https://github.com/VishnuPulipaka/AI-ML
+error: Unknown subcommand: test
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote add https://github.com/VishnuPulipaka/AI-ML
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote add test https://github.com/VishnuPulipaka/AI-ML
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote show
+test
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote -v
+test    https://github.com/VishnuPulipaka/AI-ML (fetch)
+test    https://github.com/VishnuPulipaka/AI-ML (push)
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ mkdir a--ml
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ rmdir a--ml
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ mkdir ai-ml
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote add ai-ml https://github.com/VishnuPulipaka/AI-ML
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git remote -v
+ai-ml   https://github.com/VishnuPulipaka/AI-ML (fetch)
+ai-ml   https://github.com/VishnuPulipaka/AI-ML (push)
+test    https://github.com/VishnuPulipaka/AI-ML (fetch)
+test    https://github.com/VishnuPulipaka/AI-ML (push)
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ gti push -u test
+bash: gti: command not found
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git push -u test
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream test master
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$     git push --set-upstream test master
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 259.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VishnuPulipaka/AI-ML
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'test'.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git pull -u test
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|preserve|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add Signed-off-by:
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after rebase
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ git pull -v test
+From https://github.com/VishnuPulipaka/AI-ML
+ = [up to date]      master     -> test/master
+Already up to date.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/aiml (master)
+$ cd ..
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~
+$ cd youtubePro
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ mkdir aLgoTooljit
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ git add aLgoToolkit
+fatal: not a git repository (or any of the parent directories): .git
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ git remote add algoToolkit https://github.com/VishnuPulipaka/aLgoToolkit
+fatal: not a git repository (or any of the parent directories): .git
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro
+$ cd aLgoToolkit
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit
+$ git init
+Initialized empty Git repository in C:/Users/vishn/youtubePro/aLgoToolkit/.git/
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git remote add algoToolkit https://github.com/VishnuPulipaka/aLgoToolkit
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git remote-v
+git: 'remote-v' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote-fd
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git remote -v
+algoToolkit     https://github.com/VishnuPulipaka/aLgoToolkit (fetch)
+algoToolkit     https://github.com/VishnuPulipaka/aLgoToolkit (push)
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push -u aLgoToolkit
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream aLgoToolkit master
+
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push --set-upstream aLgoToolkit master
+error: src refspec master does not match any
+error: failed to push some refs to 'aLgoToolkit'
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ ^C
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git commit -m "course commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        AplusB.py
+        fibo_last.py
+        fibonacci.py
+        gcd.py
+        huge_fibonacci.py
+        lcm.py
+        output.png
+        squareFib.py
+        test.py
+
+nothing added to commit but untracked files present
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push --set-upstream aLgoToolkit master
+error: src refspec master does not match any
+error: failed to push some refs to 'aLgoToolkit'
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git add aLgoToolkit
+fatal: pathspec 'aLgoToolkit' did not match any files
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git add lcm.py
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git commit -m "course commit"
+[master (root-commit) 9b60553] course commit
+ 1 file changed, 14 insertions(+)
+ create mode 100644 lcm.py
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git remote add algoToolkit https://github.com/VishnuPulipaka/aLgoToolkit
+fatal: remote algoToolkit already exists.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push --set-upstream aLgoToolkit master
+fatal: 'aLgoToolkit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push --set-upstream aLgoToolkit master
+fatal: 'aLgoToolkit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/vishn/youtubePro/aLgoToolkit/.git/
+
+vishn@LAPTOP-0JM4LNCE MINGW64 ~/youtubePro/aLgoToolkit (master)
+$ git push --set-upstream aLgoToolkit master
+fatal: 'aLgoToolkit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
